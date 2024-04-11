@@ -5,19 +5,19 @@ export default {
         return {
             links: [
                 {
-                    photo: 'buy-comics-digital-comics.png'
+                    photo: 'footer-facebook.png'
                 },
                 {
-                    photo: 'buy-comics-merchandise.png'
+                    photo: 'footer-periscope.png'
                 },
                 {
-                    photo: 'buy-comics-subscriptions.png'
+                    photo: 'footer-pinterest.png'
                 },
                 {
-                    photo: 'buy-comics-shop-locator.png'
+                    photo: 'footer-twitter.png'
                 },
                 {
-                    photo: 'buy-dc-power-visa.svg'
+                    photo: 'footer-youtube.png'
                 },
             ]
         }
@@ -32,9 +32,13 @@ export default {
                 <div class="col-6">
                     <button type="button" class="btn my-3">SIGN-UP! NOW</button>
                 </div>
-                <div class="col-6 d-flex align-items-center">
+                <div class="col-6 d-flex align-items-center justify-content-end">
                     <div class="subtitle font-weight-bold fs-5"> FOLLOW US</div>
-                    <ul></ul>
+                    <ul class="d-flex">
+                        <li class=" d-flex align-items-center " v-for="link in links">
+                            <img class="mx-3" :src="'src/assets/img/' + link.photo" alt="">
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
