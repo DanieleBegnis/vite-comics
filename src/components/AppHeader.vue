@@ -78,12 +78,16 @@ export default {
         ul {
             a {
                 color: #000;
+                &.active {
+                color: $brand-primary;
+            }
             }
         }
         li {
             padding: 12px;
             &.active {
-                background-color: $brand-primary;
+                color: $brand-primary;
+                border-bottom: 3px solid $brand-primary;
             }
         }
     }
