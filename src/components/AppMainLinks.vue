@@ -6,23 +6,23 @@ export default {
             links: [
                 {
                     text: 'DIGITAL COMICS',
-                    photo: ''
+                    photo: 'buy-comics-digital-comics.png'
                 },
                 {
                     text: 'DC MERCHANDISE',
-                    active: true
+                    photo: 'buy-comics-merchandise.png'
                 },
                 {
                     text: 'SUBSCRIPTION',
-                    active: false
+                    photo: 'buy-comics-subscriptions.png'
                 },
                 {
                     text: 'COMIC SHOP LOCATOR',
-                    active: false
+                    photo: 'buy-comics-shop-locator.png'
                 },
                 {
                     text: 'DC POWER VISA',
-                    active: false
+                    photo: 'buy-dc-power-visa.svg'
                 },
             ]
         }
@@ -36,9 +36,9 @@ export default {
             <div class="row">
                 <div class="col-12 d-flex align-items-center" >
                     <ul class="d-flex py-5">
-                        <li v-for="link in links">
+                        <li class="px-3 d-flex" v-for="link in links">
+                            <img :src="'src/assets/img/' + link.photo" alt="">
                             <a href="#">{{ link.text }}</a>
-                            <!-- <img :src="./.......{ link.photo}" alt=""> -->
                         </li>
                     </ul>
                 </div>
