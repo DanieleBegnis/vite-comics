@@ -3,6 +3,7 @@
   import AppMainContent from './components/AppMainContent.vue';
   import AppMainLinks from './components/AppMainLinks.vue';
   import AppFooterLinks from './components/AppFooterLinks.vue';
+  import AppFooterFinal from './components/AppFooterFinal.vue';
 
 
   export default {
@@ -11,6 +12,7 @@
       AppMainContent,
       AppMainLinks,
       AppFooterLinks,
+      AppFooterFinal,
     }
   }
 </script>
@@ -22,6 +24,7 @@
     <AppMainLinks></AppMainLinks>
   </main>
   <AppFooterLinks></AppFooterLinks>
+  <AppFooterFinal></AppFooterFinal>
 
 </template>
 

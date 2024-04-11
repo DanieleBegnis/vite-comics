@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: 'AppHeader',
+    name: 'AppMainLinks',
     data() {
         return {
             links: [
