@@ -94,7 +94,7 @@ export default {
 <template>
     <footer>
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-between">
                 <div class="col-4 ">
                     <div class="row my-2">
                         <div class="col-4">
@@ -129,8 +129,8 @@ export default {
                         </div>
                     </div>
                 </div>
-                <div class="col-8 ">
-                    <img src="../assets/img/dc-logo-bg.png" alt="">
+                <div class="col-8">
+                    <!-- <img src="../assets/img/dc-logo-bg.png" alt=""> -->
                 </div>
             </div>
         </div>
@@ -141,6 +141,11 @@ export default {
 @use '../style/partials/variables' as *;
     footer {
         background-image: url('src/assets/img/footer-bg.jpg');
+        .col-8 {
+            background-image: url('src/assets/img/dc-logo-bg.png');
+            background-size: cover;
+            width: 50%;
+        } 
     }
     .subtitle {
         color: #fff;
