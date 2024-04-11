@@ -10,6 +10,7 @@
 
 <template>
   <AppHeader></AppHeader>
+  
 </template>
 
 <style lang="scss">
