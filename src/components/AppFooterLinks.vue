@@ -2,5 +2,19 @@
 </script>
 
 <template>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum blanditiis illum distinctio accusantium perferendis voluptatem nam repellat error assumenda ad iure est facere laudantium, minima mollitia praesentium exercitationem quae numquam?
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 "></div>
+                <div class="col-8 "></div>
+            </div>
+        </div>
+    </footer>
 </template>
+
+<style scoped lang="scss">
+@use '../style/partials/variables' as *;
+    footer {
+        background-image: url('src/assets/img/footer-bg.jpg');
+    }
+</style>
