@@ -51,14 +51,14 @@ export default {
 </script>
 
 <template>
-    <header>
-        <div class="container">
+    <header class="d-flex">
+        <div class="container d-flex ">
             <div class="row">
             <div class="col-6">
                 <img src="../assets/img/dc-logo.png" alt="">
             </div>
-            <div class="col-6" >
-                <ul class="d-flex">
+            <div class="col-6 d-flex align-items-center" >
+                <ul class="d-flex ">
                 <li :class="{'active': link.active}" v-for="link in links">
                     <a href="#">{{ link.text }}</a>
                 </li>
@@ -81,6 +81,7 @@ export default {
             }
         }
         li {
+            padding: 12px;
             &.active {
                 background-color: $brand-primary;
             }
