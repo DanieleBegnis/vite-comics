@@ -38,7 +38,7 @@ export default {
                     <ul class="d-flex py-5">
                         <li v-for="link in links">
                             <a href="#">{{ link.text }}</a>
-                            <img :src="./.......{ link.photo}" alt="">
+                            <!-- <img :src="./.......{ link.photo}" alt=""> -->
                         </li>
                     </ul>
                 </div>
