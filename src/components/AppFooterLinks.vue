@@ -96,33 +96,33 @@ export default {
         <div class="container">
             <div class="row">
                 <div class="col-4 ">
-                    <div class="row">
+                    <div class="row my-2">
                         <div class="col-4">
-                            <div class="subtitle">DC COMICS</div>
+                            <div class="subtitle py-3 fs-5 font-weight-bold">DC COMICS</div>
                             <ul>
-                                <li class="px-3 d-flex align-items-center" v-for="comic in comics">
+                                <li class="d-flex align-items-center" v-for="comic in comics">
                                     <a class="px-6" href="#">{{ comic.text }}</a>
                                 </li>
                             </ul>
-                            <div class="subtitle">SHOP</div>
+                            <div class="subtitle py-3 fs-5 font-weight-bold">SHOP</div>
                             <ul>
-                                <li class="px-3 d-flex align-items-center" v-for="store in shop">
+                                <li class="d-flex align-items-center" v-for="store in shop">
                                     <a class="px-6" href="#">{{ store.text }}</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-4">
-                            <div class="subtitle">DC</div>
+                            <div class="subtitle py-3 fs-5 font-weight-bold">DC</div>
                             <ul>
-                                <li class="px-3 d-flex align-items-center" v-for="magazine in dc">
+                                <li class="d-flex align-items-center" v-for="magazine in dc">
                                     <a class="px-6" href="#">{{ magazine.text }}</a>
                                 </li>
                             </ul>                          
                         </div>
                         <div class="col-4">
-                            <div class="subtitle">SITES</div>
+                            <div class="subtitle py-3 fs-5 font-weight-bold">SITES</div>
                             <ul>
-                                <li class="px-3 d-flex align-items-center" v-for="site in sites">
+                                <li class="d-flex align-items-center" v-for="site in sites">
                                     <a class="px-6" href="#">{{ site.text }}</a>
                                 </li>
                             </ul>
@@ -144,6 +144,9 @@ export default {
     }
     .subtitle {
         color: #fff;
+    }
+    ul {
+        padding: 0;
     }
     li {
         font-size: 10px;
