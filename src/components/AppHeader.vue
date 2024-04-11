@@ -58,7 +58,7 @@ export default {
                 <img src="../assets/img/dc-logo.png" alt="">
             </div>
             <div class="col-6 d-flex align-items-center" >
-                <ul class="d-flex ">
+                <ul class="d-flex">
                 <li :class="{'active': link.active}" v-for="link in links">
                     <a href="#">{{ link.text }}</a>
                 </li>
