@@ -85,10 +85,12 @@ export default {
 <template>
     <main>
         <div class="jumbotron">
-
+            <div class="container">
+                <div class="box p-3 fs-6 font-weight-bold">CURRENT SERIE</div>
+            </div>
         </div>
-       <div class="my-3 container">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptates nam nulla eius maiores cum saepe, aliquam aliquid voluptatem inventore rerum commodi vel perspiciatis ratione distinctio, quas esse possimus corrupti.
+       <div class="py-3 container">
+                 
        </div>
     </main>
 </template>
@@ -102,6 +104,15 @@ export default {
             background-image: url('src/assets/img/jumbotron.jpg');
             background-size: cover;
             height: 400px;
+            position: relative;
+        }
+        .box {
+        background-color: $brand-primary;
+        width: 200px;
+        text-align: center;
+        position: absolute;
+        bottom: -25px;
         }
     }
+
 </style>
