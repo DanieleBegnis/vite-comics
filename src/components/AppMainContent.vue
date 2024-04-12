@@ -95,10 +95,10 @@ export default {
         </div>
         <section class="card-list container py-5">
             <ComicCard v-for="comic in comics" :cardInfo="comic"></ComicCard>
-            <div class="py-3 d-flex justify-content-center">
-                <div class="box p-3 fs-6 font-weight-bold">LOAD MORE</div>
-            </div>
         </section>
+        <div class="py-3 d-flex justify-content-center">
+            <div class="box p-3 fs-6 font-weight-bold">LOAD MORE</div>
+        </div>
     </main>
 </template>
 

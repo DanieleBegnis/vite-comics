@@ -11,7 +11,7 @@ export default {
             <img :src="cardInfo.thumb">
         </div>
 
-        <h3>{{ cardInfo.series }}</h3>
+        <p class="py-2">{{ cardInfo.series }}</p>
     </div>
 
 </template>
