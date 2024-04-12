@@ -1,6 +1,10 @@
 <script>
+import ComicCard from './ComicCard.vue';
 export default {
     name: 'AppHeader',
+    components: {
+        ComicCard
+    },
     data() {
         return {
             comics: [
@@ -86,12 +90,15 @@ export default {
     <main>
         <div class="jumbotron">
             <div class="container">
-                <div class="box p-3 fs-6 font-weight-bold">CURRENT SERIE</div>
+                <div class="box box-relative p-2 fs-6 font-weight-bold">CURRENT SERIE</div>
             </div>
         </div>
-       <div class="py-3 container">
-                 
-       </div>
+        <section class="card-list container py-5">
+            <ComicCard v-for="comic in comics" :cardInfo="comic"></ComicCard>
+            <div class="py-3 d-flex justify-content-center">
+                <div class="box p-3 fs-6 font-weight-bold">LOAD MORE</div>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -105,14 +112,20 @@ export default {
             background-size: cover;
             height: 400px;
             position: relative;
+            .box-relative {
+                position: absolute;
+                bottom: -20px;
+            }
         }
         .box {
         background-color: $brand-primary;
         width: 200px;
         text-align: center;
-        position: absolute;
-        bottom: -25px;
         }
     }
-
+    .card-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 </style>
