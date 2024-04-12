@@ -143,8 +143,8 @@ export default {
         background-image: url('src/assets/img/footer-bg.jpg');
         .col-8 {
             background-image: url('src/assets/img/dc-logo-bg.png');
-            background-size: cover;
-            width: 50%;
+            background-repeat: no-repeat;
+            background-position: 100%;
         } 
     }
     .subtitle {

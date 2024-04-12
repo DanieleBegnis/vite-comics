@@ -55,7 +55,7 @@ export default {
         <div class="container d-flex ">
             <div class="row">
             <div class="col-6">
-                <img src="../assets/img/dc-logo.png" alt="">
+                <img class="py-2" src="../assets/img/dc-logo.png" alt="">
             </div>
             <div class="col-6 d-flex align-items-center py-3" >
                 <ul class="d-flex">
@@ -74,6 +74,7 @@ export default {
     .col-6 {
         img {
             padding: 20px, 0;
+            display: block;
         }
         ul {
             a {
