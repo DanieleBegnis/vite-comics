@@ -35,7 +35,7 @@ export default {
                 <div class="col-6 d-flex align-items-center justify-content-end">
                     <div class="subtitle font-weight-bold fs-5"> FOLLOW US</div>
                     <ul class="d-flex">
-                        <li class=" d-flex align-items-center " v-for="link in links">
+                        <li v-for="link in links">
                             <img class="mx-3" :src="'src/assets/img/' + link.photo" alt="">
                         </li>
                     </ul>
@@ -56,6 +56,9 @@ export default {
         }
         .subtitle {
             color: $brand-primary;
+        }
+        img {
+            vertical-align: middle;
         }
     }
 </style>
